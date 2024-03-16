@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import Square from './Square';
+import Message from './Message';
 
 const Board = () => {
   const [squares, setSquares] = useState(Array(9).fill(null));
@@ -11,6 +12,11 @@ const Board = () => {
         onClick={() => handleSquareClick(position)}
       />
     );
+  };
+
+  const renderNextPlayer = () => {
+    if (isXNext) return <Message player={'X'} />;
+    else return <Message player={'O'} />;
   };
 
   const handleSquareClick = clickedPosition => {
@@ -32,6 +38,7 @@ const Board = () => {
 
   return (
     <div className="board">
+      {/* {renderNextPlayer()} */}
       <div className="board-row">
         {renderSquare(0)}
         {renderSquare(1)}
