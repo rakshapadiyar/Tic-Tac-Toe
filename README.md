@@ -1,7 +1,7 @@
 # Tic-Tac-Toe
 
--> Uses SASS for styling the game board
--> Maintained the state of the board using an Array of length 9 (3\*3 game board);
+-> Uses SASS for styling the game board  
+-> Maintained the state of the board using an Array of length 9 (3 \* 3 game board);
 
 # React + Vite
 
